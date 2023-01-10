@@ -17,10 +17,45 @@
 
 	<img src="pfp.png" width="25%" height="25%" />
 
-	<br/>
-	<br/>
+	<br />
+	<br />
 
-	<i>Site Under Construction</i>
+	<p>Guy 22</p>
+	<p id="quote"></p>
+
+	<script>
+		const quotes = [];
+		quotes.push("Thinking about getting into poetry.");
+		quotes.push("I ate a wild mushroom once.");
+		quotes.push("Starting to take breakdancing classes on mondays.");
+		quotes.push("Want a return on my dumbbells. They keep getting lighter.");
+		quotes.push("I write a lot.");
+		quotes.push("I started wearing cologne but worry about over applying and so far nobody's noticed I'm wearing any.");
+		quotes.push("\"The basement is for the kids.\" (I was talking about my local library)");
+		quotes.push("I hear the job market's rough right now.");
+		quotes.push("The subway's like a roller coaster sometimes and that's pretty cool.");
+		quotes.push("Been drinking a lot more water.");
+		quotes.push("Finally found a rival!.");
+		quotes.push("I know how to make \"Best Lentil Soup\".");
+		quotes.push("Thinking about making a cape.");
+		quotes.push("I love Scott Pilgrim vs. the World.");
+
+		var quoteOfTheLoad = Math.floor(Math.random() * quotes.length);
+		document.getElementById("quote").innerHTML = quotes[quoteOfTheLoad];
+	</script>
+
+	<p id="current_hobby"></p>
+
+	<script>
+		const currentHobby = [];
+		currentHobby.push("Currently into 💪Working Out");
+		currentHobby.push("Currently into 🕺Dancing");
+		currentHobby.push("Currently into 🎻Ukulele");
+
+		var hobbyOfTheLoad = Math.floor(Math.random() * currentHobby.length);
+		document.getElementById("current_hobby").innerHTML = currentHobby[hobbyOfTheLoad];
+	</script>
+
 
 </body>
 
